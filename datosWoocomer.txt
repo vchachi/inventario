@@ -1,0 +1,4 @@
+clave cliente
+ck_cdc3172bc2f56294efc8b632a01a9491ae13023e
+clave secreta
+cs_7f2eba7587a50e0b978e2b8f49714ce93de80e59
