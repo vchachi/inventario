@@ -7,12 +7,12 @@
                 <div class="col-sm-6">
                     <h1>Clientes</h1>
                 </div>
-                <div class="col-sm-6">
-                    <a class="btn btn-primary float-right"
+                <div class="col-sm-6 d-flex gap-2 align-items-center justify-content-end">
+                    <a class="btn btn-primary"
                        href="{{ route('clients.create') }}">
                        Nuevo
                     </a>
-                    <a class="btn btn-primary float-right"
+                    <a class="btn btn-primary"
                        href="{{ route('exportcliente.create') }}">
                        Exportar
                     </a>

@@ -108,7 +108,7 @@ window.location.href = "{{route('inciio')}}"
                          class="user-image img-circle elevation-2" alt="User Image">
                     @else
 
-                    <img src="{{asset(Auth::user()->logo)}}"
+                    <img src="{{ asset(Auth::user()->logo ?? 'dist/img/user2-160x160.jpg') }}"
                          class="user-image img-circle elevation-2" alt="User Image">
                     @endif
                     <span class="d-none d-md-inline">{{ Auth::user()->name }}</span>
@@ -122,7 +122,7 @@ window.location.href = "{{route('inciio')}}"
      class="img-circle elevation-2" alt="User Image">
 @else
 
-<img src="{{asset(Auth::user()->logo)}}"
+<img src="{{asset(Auth::user()->logo ?? 'dist/img/user2-160x160.jpg')}}"
      class="img-circle elevation-2" alt="User Image">
 @endif
                         <p>
