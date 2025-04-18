@@ -5,14 +5,14 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Ventas</h1>
+                    <h1>Ordenes</h1>
                 </div>
-                <div class="col-sm-6">
+                <!-- <div class="col-sm-6">
                     <a class="btn btn-primary float-right"
                        href="{{ route('sales.create') }}">
                       Nuevo
                     </a>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

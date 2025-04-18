@@ -5,20 +5,13 @@
         <p>Inicio</p>
     </a>
 </li>
-<li class="nav-item">
-    <a href="{{ route('repairs.index') }}"
-       class="nav-link {{ Request::is('repairs*') ? 'active' : '' }}">
-       <i class="nav-icon fa fa-wrench"></i>
-        <p>Reparaciones</p>
-    </a>
-</li>
 
 
 <li class="nav-item">
     <a href="{{ route('sales.index') }}"
        class="nav-link {{ Request::is('sales*') ? 'active' : '' }}">
        <i class="nav-icon fa fa-shopping-cart"></i>
-        <p>Ventas</p>
+        <p>Ordenes</p>
     </a>
 </li>
 
@@ -71,10 +64,16 @@
             </a>
         </li>
     </ul>
-</li>
-
-                
+</li>            
 @endif
+
+<li class="nav-item">
+    <a href="{{ route('repairs.index') }}"
+       class="nav-link {{ Request::is('repairs*') ? 'active' : '' }}">
+       <i class="nav-icon fa fa-wrench"></i>
+        <p>Reparaciones</p>
+    </a>
+</li>
 
 <li class="nav-item">
     <a href="#"

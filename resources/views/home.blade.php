@@ -21,20 +21,6 @@
     <!-- /.content-header -->
     <!-- Small boxes (Stat box) -->
     <div class="row">
-        <div class="col-lg-3 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-                <div class="inner">
-                    <h3>{{$repairsTotal}}</h3>
-
-                    <p>Reparaciones</p>
-                </div>
-                <div class="icon">
-                    <i class="ion ion-settings"></i>
-                </div>
-                <a href="{{ route('repairs.index') }}" class="small-box-footer">Más información <i class="fas fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
         <!-- ./col -->
         <div class="col-lg-3 col-6">
             <!-- small box -->
@@ -72,7 +58,7 @@
                 <div class="inner">
                     <h3>{{$salesTotal}}</h3>
 
-                    <p>Ventas</p>
+                    <p>Ordenes</p>
                 </div>
                 <div class="icon">
                     <i class="ion ion-pie-graph"></i>
@@ -81,6 +67,20 @@
             </div>
         </div>
         <!-- ./col -->
+        <div class="col-lg-3 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+                <div class="inner">
+                    <h3>{{$repairsTotal}}</h3>
+
+                    <p>Reparaciones</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-settings"></i>
+                </div>
+                <a href="{{ route('repairs.index') }}" class="small-box-footer">Más información <i class="fas fa-arrow-circle-right"></i></a>
+            </div>
+        </div>
     </div>
     <!-- Main row -->
     <div class="row">
@@ -105,7 +105,7 @@
                           <th class="all">Número serie</th>
                           <th class="all">Cliente</th>
                           <th class="all">Categoria</th>
-                          <th class="all">Coste Reparación</th>
+                          <th class="all">Coste</th>
                           <th class="all">Estado</th>
                         </tr>
                         </thead>
@@ -125,7 +125,7 @@
                           <th>Número serie</th>
                           <th>Cliente</th>
                           <th>Categoria</th>
-                          <th>Coste Reparación</th>
+                          <th>Coste</th>
                           <th>Estado</th>
                         </tr>
                         </tfoot>
@@ -189,7 +189,7 @@
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">Listado Ultimas Ventas</h3>
+                    <h3 class="card-title">Listado Ultimas Ordenes</h3>
                     <div class="card-tools">
                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
                             <i class="fas fa-minus"></i>
@@ -215,7 +215,7 @@
                 </div>
 
                 <div class="card-footer text-center">
-                    <a href="{{ route('sales.index') }}" class="uppercase">Ver todas las ventas</a>
+                    <a href="{{ route('sales.index') }}" class="uppercase">Ver todas las órdenes</a>
                 </div>
 
             </div>
