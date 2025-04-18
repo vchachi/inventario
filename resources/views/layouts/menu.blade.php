@@ -8,10 +8,18 @@
 
 
 <li class="nav-item">
+    <a href="{{ route('orders.index') }}"
+       class="nav-link {{ Request::is('orders*') ? 'active' : '' }}">
+       <i class="nav-icon fa fa-shopping-bag"></i>
+        <p>Orders</p>
+    </a>
+</li>
+
+<li class="nav-item">
     <a href="{{ route('sales.index') }}"
        class="nav-link {{ Request::is('sales*') ? 'active' : '' }}">
        <i class="nav-icon fa fa-shopping-cart"></i>
-        <p>Ordenes</p>
+        <p>Ventas</p>
     </a>
 </li>
 
@@ -64,7 +72,9 @@
             </a>
         </li>
     </ul>
-</li>            
+</li>
+
+                
 @endif
 
 <li class="nav-item">
